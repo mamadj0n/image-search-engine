@@ -1,0 +1,19 @@
+# Image Search Module Requirements
+# Core dependencies
+torch>=2.0.0,<3.0.0
+torchvision>=0.15.0,<1.0.0
+faiss-cpu>=1.8.0,<2.0.0
+kagglehub>=0.1.0,<1.0.0
+
+# Data processing
+pandas>=2.0.0,<3.0.0
+numpy>=1.24.0,<2.0.0
+pillow>=10.0.0,<11.0.0
+tqdm>=4.65.0,<5.0.0
+
+# Utilities
+requests>=2.31.0,<3.0.0
+matplotlib>=3.7.0,<4.0.0
+
+# Optional: for GPU support (uncomment if using GPU)
+# faiss-gpu>=1.8.0,<2.0.0
