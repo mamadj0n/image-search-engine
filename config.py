@@ -29,7 +29,7 @@ IDS_FILE = "image_ids.npy"
 
 # DataLoader configuration
 BATCH_SIZE = 128
-NUM_WORKERS = 4
+NUM_WORKERS = 0
 PIN_MEMORY = True
 
 # Search configuration
