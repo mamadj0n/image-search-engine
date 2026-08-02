@@ -28,9 +28,9 @@ INDEX_FILE = "fashion_faiss.index"
 IDS_FILE = "image_ids.npy"
 
 # DataLoader configuration
-BATCH_SIZE = 128
+BATCH_SIZE = 8
 NUM_WORKERS = 0
-PIN_MEMORY = True
+PIN_MEMORY = False
 
 # Search configuration
 DEFAULT_TOP_K = 10
