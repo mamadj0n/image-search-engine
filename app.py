@@ -110,11 +110,11 @@ if st.sidebar.button("Search", type="primary"):
                         with col:
                             try:
                                 # Try to load and display image
-                                                                if isinstance(img_path, str) and img_path.startswith('http'):
-                                                                    response = requests.get(img_path)
-                                                                    img = Image.open(BytesIO(response.content))
-                                                                else:
-                                                                    img = Image.open(img_path)
+                                if isinstance(img_path, str) and img_path.startswith('http'):
+                                    response = requests.get(img_path)
+                                    img = Image.open(BytesIO(response.content))
+                                else:
+                                    img = Image.open(img_path)
                                 img.thumbnail((200, 200))
                                 st.image(img, use_column_width=True)
                                 caption = f"Score: {score:.3f}"
